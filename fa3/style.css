@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background: #000;
+    color: #ffd700;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 24px;
+}
+
+.header-panel {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header-panel h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    color: #ffd700;
+}
+
+.roster-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.roster-table th,
+.roster-table td {
+    border: 1px solid #444;
+    padding: 18px 20px;
+}
+
+.roster-table th {
+    background: #111;
+    color: #ffd700;
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+.roster-table tbody tr:nth-child(even) {
+    background: #111;
+}
+
+.roster-table td {
+    color: #f5e066;
+    font-size: 1rem;
+}
+
+.photo-cell img {
+    width: 110px;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #ffd700;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 18px;
+    }
+
+    .roster-table th,
+    .roster-table td {
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        padding: 16px;
+    }
+
+    .header-panel h1 {
+        font-size: 2rem;
+    }
+
+    .roster-table,
+    .roster-table thead,
+    .roster-table tbody,
+    .roster-table th,
+    .roster-table td,
+    .roster-table tr {
+        display: block;
+    }
+
+    .roster-table tr {
+        margin-bottom: 16px;
+    }
+
+    .roster-table th {
+        display: none;
+    }
+
+    .roster-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 14px;
+    }
+
+    .roster-table td::before {
+        content: none;
+    }
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    background: linear-gradient(145deg, #ffd700, #e6c200);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd70044;
+    transition: all 0.3s ease;
+
+}
+
+
+.back-btn:hover {
+    background: linear-gradient(145deg, #fff176, #ffd700);
+    box-shadow: 0 0 15px #ffd700, 0 0 30px #ffd70088;
+    transform: scale(1.08);
+}
+
+
+.back-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #ffd700;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
